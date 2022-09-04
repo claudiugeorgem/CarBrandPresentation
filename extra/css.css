@@ -1,0 +1,187 @@
+body {
+  background-color: #242424;
+  color: #ffffff;
+}
+
+* {font-family: Verdana, sans-serif; box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0; background-color: black;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+
+.topnav {
+	
+  background-color: #000000;
+  overflow: hidden;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 11px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.topnav a:hover {
+  background-color: #333;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #ffffff;
+  color: black;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+button.accordion {
+	background-color: #000000;
+	color: #ffffff;
+	cursor: pointer;
+	width: 50%;
+	text-align: center;
+	border-style: dashed;
+	vertical-align: middle;
+	transition: 0.8s;
+}
+
+button.accordion.active,
+button.accordion:hover, 
+button.accordion.active:before {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+div.panel {
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	width: 50%;
+	transition: max-height 0.3s ease-out;
+}
+
+.card {
+        position: relative;
+        display: inline-block;
+        margin: 50px;
+    }
+.card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+.card:hover .img-top {
+        display: inline;
+    }
+	
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.coloana {
+  float: left;
+  width: 33.33%;
+  padding: 25px;
+}
+
+.rand::after {
+  content: "";
+  clear: both;
+  display: block;
+}	
